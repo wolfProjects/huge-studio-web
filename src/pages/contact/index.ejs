@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>联系我们 - 深圳市卡扑动漫设计有限公司</title>
+    <meta name="keywords" content="深圳市卡扑动漫设计有限公司" />
+    <meta name="description" content="深圳市卡扑动漫设计有限公司" />
+  </head>
+
+  <body class="inner-page">
+    <div class="page-contact">
+      <%= require('@/global.ejs')() %>
+
+      <div class="subbody">
+        <div class="contact">
+          <div class="contact-map">
+            <div class="baidumap" id="dituContent"></div>
+          </div>
+
+          <div class="contact-address">
+            <div class="address-title">
+              卡扑地址<br />
+              <span>Address</span>
+            </div>
+            <div class="address-content">
+              <ul>
+                <li>
+                  地址：深圳市南山区兴华路6号南海意库6栋<br/>
+                  301-303（搜索地图页面）  
+                </li>
+                <li>
+                  电话：<a style="color: #cacaca;" href="tel:+86 0755-26853391">+86 0755-26853391</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-wx">
+          <div class="wx-boxlist">
+            <div class="wx-box">
+              <div class="wz">
+                <div class="wz-title">
+                  商务合作<br />
+                  <span>Cooperation</span>
+                </div>
+                <div class="wz-name">
+                  卡卡
+                </div>
+                <ul>
+                  <li>
+                    手机&amp; 微信：<a style="color: #fff;" href="tel:17722693050">17722693050</a>
+                  </li>
+                  <li>
+                    邮箱：<a style="color: #fff;" href="mailto:kaka@hugeclaw.com">kaka@hugeclaw.com</a>
+                  </li>
+                  <li>
+                    QQ：2227935676
+                  </li>
+                </ul>
+              </div>
+              <div class="qrcode">
+                <img
+                  src="<%=require('../../images/contact-wx-qrcode.png') %>"
+                />
+              </div>
+            </div>
+            <div class="wx-box">
+              <div class="wz">
+                <div class="wz-title">
+                  加入我们<br />
+                  <span>Join Us</span>
+                </div>
+                <div class="wz-name"></div>
+                <ul>
+                  <li>
+                    手机&amp; 微信：<a style="color: #fff;" href="tel:15013495772">15013495772</a>
+                  </li>
+                  <li>
+                    邮箱：<a style="color: #fff;" href="mailto:hr@hugeclaw.com">hr@hugeclaw.com</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="qrcode">
+                <img
+                  src="<%=require('../../images/contact-swwx-qrcode.png') %>"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-zcool">
+          <div class="zcool-kppt">
+            <div class="zcool-content">
+              <div class="zcool-title">
+                卡扑平台<br />
+                <span>Social Media</span>
+              </div>
+              <div class="zcool-url">
+                <a href="https://www.zcool.com.cn/u/13744698" target="_blank"
+                  >https://www.zcool.com.cn/u/13744698</a
+                >
+              </div>
+              <div class="zcool-url-mobile">
+                <a href="https://www.zcool.com.cn/u/13744698" target="_blank"
+                    >https://www.zcool.com.cn/u/13744698</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+  </body>
+</html>

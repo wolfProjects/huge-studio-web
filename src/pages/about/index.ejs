@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>关于我们 - 深圳市卡扑动漫设计有限公司</title>
+    <meta name="keywords" content="深圳市卡扑动漫设计有限公司" />
+    <meta name="description" content="深圳市卡扑动漫设计有限公司" />
+  </head>
+
+  <body class="inner-page">
+    <%= require('@/global.ejs')() %>
+    <div class="page-about">      
+      <!-- overview -->
+      <div class="overview">
+        <div class="about-title">
+          <h2>卡扑介绍</h2>
+          <span>OVERVIEW</span>
+        </div>
+        <div class="overview-content">
+          <p class="special-text">作为国内资深的<strong>视觉创意综合体</strong></p>
+          <p>卡扑是一个专注于影视、游戏、文化和特别应</p>
+          <p>用的多元化创作团队提供影视概念设计、后</p>
+          <p>期制作、游戏宣发、二维动画、三维动画、</p>
+          <p>视效广告、综合视觉设计、文化IP打造和原创动</p>
+          <p class="special-text">漫IP开发等创意和服务</p>
+        </div>
+  
+        <div class="overview-row">
+          <div class="boss-list">
+            <div class="boss-list-hd">
+              <img class="pcOnly" src="<%=require('../../images/about-overview-avatar1.jpg') %>" />
+              <img class="mobileOnly" src="<%=require('../../images/about-overview-avatar1b.jpg') %>" />
+            </div>
+  
+            <div class="boss-list-bd">
+              <% for(var i=2; i <= 7; i++) { %>
+              <div class="boss-list-item">
+                <div class="avatar-wrap">
+                  <img
+                    src="<%=require('../../images/about-overview-avatar' + i + '.jpg') %>"
+                  />
+                </div>
+              </div>
+              <% } %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end overview -->
+
+      <!-- mission -->
+      <div class="mission">
+        <div class="about-title">
+          <h2>卡扑使命</h2>
+          <span>MISSION</span>
+        </div>
+        <div class="mission-title">
+          <p>
+            创作
+          </p>
+          <p class="split">
+            |
+          </p>
+          <p>
+            视觉
+          </p>
+          <p class="split">
+            |
+          </p>
+          <p>
+            故事
+          </p>
+        </div>
+        <div class="mission-content">
+          <p class="special-text">在前辈们的启蒙和指引下</p>
+          <p>我们成长并坚定从事影视艺术事业的信念。</p>
+          <p> 我们以扎实的功力一直坚持创作，求质崇新；</p>
+          <p>我们将无形的想象化作生动图像，令人瞩目；</p>
+          <p>我们用精彩的故事赋予作品生命，引发共鸣。</p>
+          <p class="special-text">我们要成为世界优秀的团队，奉献感动人心的<span class="sp1">作品。</span></p>
+          <p class="special-text sp2">作品</p>
+        </div>
+      </div>
+      <!-- end mission -->
+
+      <!-- history -->
+      <div class="history">
+        <div class="about-title">
+          <h2>卡扑历程</h2>
+          <span>HISTORY</span>
+        </div>
+        <div class="history-swiper">
+          <!-- Slider main container -->
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="<%= require('../../images/history01.png') %>" alt="卡扑动漫">
+                </div>
+                <div class="swiper-slide">
+                  <img src="<%= require('../../images/history02.png') %>" alt="卡扑动漫">
+                </div>
+                <div class="swiper-slide">
+                  <img src="<%= require('../../images/history03.png') %>" alt="卡扑动漫">
+                </div>
+                <div class="swiper-slide">
+                  <img src="<%= require('../../images/history04.png') %>" alt="卡扑动漫">
+                </div>
+                <div class="swiper-slide">
+                  <img src="<%= require('../../images/history05.png') %>" alt="卡扑动漫">
+                </div>
+                <div class="swiper-slide">
+                  <img src="<%= require('../../images/history06.png') %>" alt="卡扑动漫">
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- team -->
+      <div class="team">
+        <div class="about-title">
+          <h2>卡扑团队</h2>
+          <span>CREW</span>
+        </div>
+        <div class="team-bd">
+          <div class="team-item">
+            <div class="team-item-avatar">
+              <img
+                src="<%=require('../../images/about-crew-avatar1.png') %>"
+              />
+            </div>
+            <div class="box-content">
+              <h3 class="post">
+                <b>特效师</b>
+              </h3>
+              <span class="name">fish</span>
+            </div>
+          </div>
+          <div class="team-item">
+            <div class="team-item-avatar">
+              <img
+                src="<%=require('../../images/about-crew-avatar2.png') %>"
+              />
+            </div>
+            <div class="box-content">
+              <h3 class="post">
+                <b>PLACE</b>
+              </h3>
+              <span class="name">Lyn</span>
+            </div>
+          </div>
+          <div class="team-item">
+            <div class="team-item-avatar">
+              <img
+                src="<%=require('../../images/about-crew-avatar3.png') %>"
+              />
+            </div>
+            <div class="box-content">
+              <h3 class="post">
+                <b>概念设计师</b>
+              </h3>
+              <span class="name">dan</span>
+            </div>
+          </div>
+          <div class="team-item">
+            <div class="team-item-avatar">
+              <img
+                src="<%=require('../../images/about-crew-avatar4.png') %>"
+              />
+            </div>
+            <div class="box-content">
+              <h3 class="post">
+                <b>PM</b>
+              </h3>
+              <span class="name">folth</span>
+            </div>
+          </div>
+          <div class="team-item">
+            <div class="team-item-avatar">
+              <img
+                src="<%=require('../../images/about-crew-avatar5.png') %>"
+              />
+            </div>
+            <div class="box-content">
+              <h3 class="post">
+                <b>导演</b>
+              </h3>
+              <span class="name long-text">guangyu</span>
+            </div>
+          </div>
+          <div class="team-item">
+            <div class="team-item-avatar">
+              <img
+                src="<%=require('../../images/about-crew-avatar6.png') %>"
+              />
+            </div>
+            <div class="box-content">
+              <h3 class="post">
+                <b>特效师</b>
+              </h3>
+              <span class="name long-text">panxiety</span>
+            </div>
+          </div>
+          <div class="team-item">
+            <div class="team-item-avatar">
+              <img
+                src="<%=require('../../images/about-crew-avatar7.png') %>"
+              />
+            </div>
+            <div class="box-content">
+              <h3 class="post">
+                <b>动画师</b>
+              </h3>
+              <span class="name">fury</span>
+            </div>
+          </div>
+          <div class="team-item">
+            <div class="team-item-avatar">
+              <img
+                src="<%=require('../../images/about-crew-avatar8.png') %>"
+              />
+            </div>
+            <div class="box-content">
+              <h3 class="post">
+                <b>灯光师</b>
+              </h3>
+              <span class="name">hong</span>
+            </div>
+          </div>
+          <div class="team-item">
+            <div class="team-item-avatar">
+              <img src="<%=require('../../images/about-crew-avatar9.png') %>" />
+            </div>
+            <div class="box-content">
+              <h3 class="post">
+                <b>商务经理</b>
+              </h3>
+              <span class="name">daniel</span>
+            </div>
+          </div>
+          <div class="team-item">
+            <div class="team-item-avatar">
+              <img
+                src="<%=require('../../images/about-crew-avatar10.png') %>"
+              />
+            </div>
+            <div class="box-content">
+              <h3 class="post">
+                <b>模型师</b>
+              </h3>
+              <span class="name">junze</span>
+            </div>
+          </div>
+          <div class="team-item">
+            <div class="team-item-avatar">
+              <img
+                src="<%=require('../../images/about-crew-avatar11.png') %>"
+              />
+            </div>
+            <div class="box-content">
+              <h3 class="post">
+                <b>设计师</b>
+              </h3>
+              <span class="name">shiro</span>
+            </div>
+          </div>
+          <div class="team-item">
+            <div class="team-item-avatar">
+              <img
+                src="<%=require('../../images/about-crew-avatar12.png') %>"
+              />
+            </div>
+            <div class="box-content">
+              <h3 class="post">
+                <b>2D艺术指导</b>
+              </h3>
+              <span class="name">mailin</span>
+            </div>
+          </div>
+          <div class="team-item">
+            <div class="team-item-avatar">
+              <img
+                src="<%=require('../../images/about-crew-avatar13.png') %>"
+              />
+            </div>
+            <div class="box-content">
+              <h3 class="post">
+                <b>后期</b>
+              </h3>
+              <span class="name">jay</span>
+            </div>
+          </div>
+          <div class="team-item">
+            <div class="team-item-avatar">
+              <img
+                src="<%=require('../../images/about-crew-avatar14.png') %>"
+              />
+            </div>
+            <div class="box-content">
+              <h3 class="post">
+                <b>创意</b>
+              </h3>
+              <span class="name">anne</span>
+            </div>
+          </div>
+          <div class="team-item">
+            <div class="team-item-avatar">
+              <img
+                src="<%=require('../../images/about-crew-avatar15.png') %>"
+              />
+            </div>
+            <div class="box-content">
+              <h3 class="post">
+                <b>灯渲师</b>
+              </h3>
+              <span class="name">gany</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end team -->
+
+      <!-- station -->
+      <div class="about-wwyh">
+        <div class="station">
+          <div class="station-title">
+            物物映画工作室<br />
+            <small>MasterEverything Animation Design</small>
+          </div>
+          <div class="station-content">
+            <div class="station-content-hd">
+              <div class="station-summary">
+                <div class="station-logo">
+                  <img src="<%=require('../../images/about-gzs-wwyx.jpg') %>" />
+                </div>
+                <div class="station-intro">
+                  <strong>中国首屈一指的 2D CG 工作室</strong>
+                  <p>浮游乎万物之祖，物物而不物于物</p>
+                  <p>物物映画追求平衡、统一和美</p>
+                </div>
+              </div>
+              <div class="station-contact">
+                <div class="station-contact-hd">
+                  <div class="station-subtitle">联系人</div>
+                  <div class="contact-info">
+                    <p>小 悟</p>
+                    <p>Tel &amp; 微信：</p>
+                    <p>17722693105</p>
+                  </div>
+                </div>
+                <div class="station-contact-bd">
+                  <img src="<%=require('../../images/about-gzs-qrcode.jpg') %>" />
+                </div>
+              </div>
+            </div>
+            <div class="station-content-bd">
+              <div class="station-businesses">
+                <div class="station-subtitle">
+                  主营业务
+                </div>
+                <div class="station-business-bd">
+                  <span>① 2D CG</span>
+                  <span>② 2D motion graphic</span>
+                  <span>③ 原画设计</span>
+                  <span>④ KV海报设计</span>
+                  <span>⑤ 影视后期制作</span>
+                  <span>⑥ 实拍后制</span>
+                  <span>⑦ loading角色表现动画</span>
+                  <span>⑧ 舞台大屏幕视觉</span>
+                  <span>⑨ 二维转三维立体技术</span>
+                  <span>⑩ 镜头跟踪 等等</span>
+                </div>
+              </div>
+              <div class="station-brands">
+                <div class="station-subtitle">
+                  合作品牌
+                </div>
+                <div class="station-brands-bd">
+                  <div class="station-brands-item">
+                    <div class="brand-image">
+                      <img src="http://www.hugeclaw.com/templates/hugeclaw/images/wwgzs_logo/wwgzs2.png" />
+                    </div>
+                  </div>
+                  <div class="station-brands-item">
+                    <div class="brand-image">
+                      <img src="http://www.hugeclaw.com/templates/hugeclaw/images/wwgzs_logo/wwgzs9.png" />
+                    </div>
+                  </div>
+                  <div class="station-brands-item">
+                    <div class="brand-image">
+                      <img src="http://www.hugeclaw.com/templates/hugeclaw/images/wwgzs_logo/wwgzs1.png" />
+                    </div>
+                  </div>
+                  <div class="station-brands-item">
+                    <div class="brand-image">
+                      <img src="http://www.hugeclaw.com/templates/hugeclaw/images/wwgzs_logo/wwgzs2.png" />
+                    </div>
+                  </div>
+                  <div class="station-brands-item">
+                    <div class="brand-image">
+                      <img src="http://www.hugeclaw.com/templates/hugeclaw/images/wwgzs_logo/wwgzs3.png" />
+                    </div>
+                  </div>
+                  <div class="station-brands-item">
+                    <div class="brand-image">
+                      <img src="http://www.hugeclaw.com/templates/hugeclaw/images/wwgzs_logo/wwgzs4.png" />
+                    </div>
+                  </div>
+                  <div class="station-brands-item">
+                    <div class="brand-image">
+                      <img src="http://www.hugeclaw.com/templates/hugeclaw/images/wwgzs_logo/wwgzs5.png" />
+                    </div>
+                  </div>
+                  <div class="station-brands-item">
+                    <div class="brand-image">
+                      <img src="http://www.hugeclaw.com/templates/hugeclaw/images/wwgzs_logo/wwgzs6.png" />
+                    </div>
+                  </div>
+                  <div class="station-brands-item">
+                    <div class="brand-image">
+                      <img src="http://www.hugeclaw.com/templates/hugeclaw/images/wwgzs_logo/wwgzs7.png" />
+                    </div>
+                  </div>
+                  <div class="station-brands-item">
+                    <div class="brand-image">
+                      <img src="http://www.hugeclaw.com/templates/hugeclaw/images/wwgzs_logo/wwgzs8.png" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-hy">
+        <div class="station">
+          <div class="station-title">
+            弦影工作室<br />
+            <small>Chord Studio</small>
+          </div>
+          <div class="station-content">
+            <div class="station-content-hd">
+              <div class="station-summary">
+                <div class="station-logo">
+                  <img src="<%=require('../../images/about-gzs-xy.jpg') %>" />
+                  </div>
+                <div class="station-intro">
+                  <p>影视电影、剧集、游戏CG、CG广告<br/>原创开发与全流程内容制作团队</p>
+                </div>
+              </div>
+              <div class="station-contact">
+                <div class="station-contact-hd">
+                  <div class="station-subtitle">联系人</div>
+                  <div class="contact-info">
+                    <p>心影</p>
+                    <p>Tel &amp; 微信：</p>
+                    <p>17722693107</p>
+                  </div>
+                </div>
+                <div class="station-contact-bd">
+                  <img src="<%=require('../../images/about-xygzs-qrcode.jpg') %>"/>
+                </div>
+              </div>
+            </div>
+            <div class="station-content-bd">
+              <div class="station-businesses">
+                <div class="station-subtitle">
+                  主营业务
+                </div>
+                <div class="station-business-bd">
+                  <p>
+                    <span>① 超写实3DCG影片</span>
+                    <span>②写实风格、卡通风格3DCG动漫</span>
+                    <span>③反真实渲染风格3DCG动漫（三维渲二维动画风格）</span>
+                    <span>④实拍影视3DCG特效合成</span>
+                  </p>
+                </div>
+              </div>
+              <div class="station-brands">
+                <div class="station-subtitle">
+                  合作品牌
+                </div>
+                <div class="content">
+                    <div class="brandbox">
+                      <img src="" />
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-yssh">
+        <div class="station">
+          <div class="station-title">
+            一视盛画工作室<br />
+            <small>YISHISHENGHUA  STUDIO</small>
+          </div>
+          <div class="station-content">
+            <div class="station-content-hd">
+              <div class="station-summary">
+                <div class="station-logo">
+                  <img src="<%=require('../../images/202005291402292848.png') %>" />
+                </div>
+                <div class="station-intro">
+                  <span>集 创作 运营 IP 孵化为一体的<br/>动漫内容原创团队</span>
+                </div>
+              </div>
+              <div class="station-contact">
+                <div class="station-contact-hd">
+                  <div class="station-subtitle">
+                    联系人
+                  </div>
+                  <div class="contact-info">
+                    <p>
+                      Jessie
+                    </p>
+                    <p>
+                      Tel &amp; 微信：
+                    </p>
+                    <p>
+                      15013495772
+                    </p>
+                  </div>
+                </div>
+                <div class="station-contact-bd">
+                  <img
+                    src="<%=require('../../images/about-ysgzs-qrcode.jpg') %>"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="station-content-bd">
+              <div class="station-businesses">
+                <div class="station-subtitle">
+                  主营业务
+                </div>
+                <div class="station-business-bd">
+                  <p>
+                    <span>① 魔法烘焙坊：互动式阅读 亲子娱乐为一体的 冒险类儿童IP</span>
+                    <span>② 星际小乐队：音乐兴趣启蒙 寓教于乐型儿童IP</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end station -->
+
+      <div class="page-slogan"></div>
+    </div>
+  </body>
+</html>

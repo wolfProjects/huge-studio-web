@@ -1,0 +1,109 @@
+@import '~@/global.less';
+
+body {
+  .header {
+    background: none;
+  }
+}
+
+.kv-bd {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.kv-image {
+  width: 100%;
+  height: 100%;
+  background: no-repeat center center;
+  background-size: cover;
+}
+
+.kv-ft {
+  position: fixed;
+  bottom: 68px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.kv-slogan {
+  flex: 1 1 auto;
+  margin: 0 18px;
+  
+  .bd {
+    opacity: 0;
+    animation: fadeInUp 1.2s ease-out forwards;
+  }
+
+  &01 {
+    width: 33.5%;
+    max-width: 186px;
+    .bd {
+      padding-top: 54.8%;
+      background: url('~images/kv01-slogan01.png') no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+
+  &02 {
+    width: 34.5%;
+    max-width: 191px;
+    .bd {
+      padding-top: 53.4%;
+      background: url('~images/kv01-slogan02.png') no-repeat;
+      background-size: 100% 100%;
+      animation-delay: .2s;
+    }
+  }
+
+  &03 {
+    width: 32%;
+    max-width: 170px;
+    .bd {
+      padding-top: 60%;
+      background: url('~images/kv01-slogan03.png') no-repeat;
+      background-size: 100% 100%;
+      animation-delay: .4s;
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translate3d(0,40%,0);
+      filter: blur(3px);
+  }
+
+  80% {
+    filter: blur(0);
+  }
+
+  to {
+      opacity: 1;
+      transform: none;
+  }
+}
+
+.mobile-header {
+  background: none;
+}
+
+@media screen and (max-width: @min-display-width) {
+  .kv-ft {
+    padding: 0 @gap;
+  }
+
+  .kv-slogan {
+    margin: 0 8px;
+  }
+}

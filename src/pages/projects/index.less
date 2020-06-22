@@ -1,0 +1,121 @@
+@import '~@/global.less';
+
+body {
+  background: url("~images/bg-main.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.page-projects {
+}
+
+.originals {
+  padding: 80px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.originals-item {
+  display: flex;
+  padding: @gap;
+  margin-bottom: 48px;
+  border: 1px solid #535353;
+}
+
+.originals-thumb {
+  flex: 1 1 auto;
+  margin-right: 36px;
+  width: 756px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.originals-intro {
+  flex: 1 1 auto;
+  width: 350px;
+  line-height: 1.8em;
+  padding-top: 20px;
+
+  .title {
+    color: @text-primary;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .originals-content {
+    margin-top: 10px;
+    color: #fff;
+  }
+
+  li {
+    position: relative;
+
+    &:before {
+      content: ' ';
+      width: 4px;
+      height: 4px;
+      background: @background-primary;
+      border-radius: 4px;
+      position: absolute;
+      left: -12px;
+      top: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .originals {
+    margin: 0 @gap;
+  }
+
+  .originals-thumb {
+    width: 100%;
+  }
+
+  .originals-intro {
+    width: 100%;
+  }
+
+  .originals-item {
+    display: block;
+  }
+}
+
+//  ipad
+@media screen and (max-width: 768px) {
+  .originals {
+    padding-top: 180px;
+  }
+}
+
+@media screen and (max-width: @min-display-width) {
+  .originals {
+    padding-top: 100px;
+    margin: 0 12px;
+  }
+
+  .originals-item {
+    padding: 14px;
+  }
+
+  .originals-intro {
+    .title {
+      font-size: 18px;
+    }
+
+    .description {
+      font-size: 14px;
+    }
+
+    li {
+      font-size: 12px;
+      position: relative;
+  
+      &:before {
+        left: -8px;
+        top: 12px;
+      }
+    }
+  }
+}

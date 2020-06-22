@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>卡扑首页 - 深圳市卡扑动漫设计有限公司</title>
+    <meta name="keywords" content="深圳市卡扑动漫设计有限公司" />
+    <meta name="description" content="深圳市卡扑动漫设计有限公司" />
+</head>
+
+<body class="inner-page">
+    <div class="page-home">
+        <%= require('@/global.ejs')() %>
+        <div class="kv">
+            <!-- 视频项目如下传参 -->
+            <div class="kv-bd">
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="kv-image" style="background-image: url('<%=require('../../images/kv.jpg') %>')" data-type="video" data-src-video="http://player.youku.com/embed/XNDY5MTM3NjczNg?autoplay=false"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="kv-image" style="background-image: url('http://www.hugeclaw.com/templates/hugeclaw/images/banner1.jpg')" data-type="video" data-src-video="http://player.youku.com/embed/XNDY5MTM3NjczNg?autoplay=false"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kv-ft">
+                <div class="kv-slogan kv-slogan01">
+                    <div class="bd"></div>
+                </div>
+                <div class="kv-slogan kv-slogan02">
+                    <div class="bd"></div>
+                </div>
+                <div class="kv-slogan kv-slogan03">
+                    <div class="bd"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- video modal -->
+        <div class="modal video-modal">
+            <div class="modal-mask"></div>
+            <div class="modal-bd">
+                <div class="video-viewer">
+                    <div class="video-viewer-container">
+                        <div class="modal-close"></div>
+                        <div class="video-viewer-bd"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end video modal -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,311 @@
+@import '~@/global.less';
+
+body {
+  background: url('~images/bg-main.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.page-join {
+  min-height: 100vh;
+  padding-bottom: 100px;
+}
+
+//  slogan
+.slogan {
+  text-align: center;
+  padding: 80px 0 40px 0;
+  font-weight: bolder;
+
+  .title {
+    line-height: 32px;
+    color: @text-primary;
+    font-size: 28px;
+    margin-bottom: 26px;
+  }
+
+  p {
+    line-height: 2.3em;
+    font-size: 24px;
+  }
+}
+
+//  stations
+.stations {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stations-item {
+  width: 266px;
+  text-align: center;
+}
+
+.station-logo {
+  img {
+    width: 133px;
+    height: 133px;
+    vertical-align: top;
+  }
+}
+
+.station-name {
+  line-height: 1.1em;
+  margin: 26px 0 18px 0;
+
+  h3 {
+    line-height: 22px;
+    color: @text-primary;
+    font-size: 20px;
+  }
+
+  small {
+    color: #5e5c61;
+    font-size: 12px;
+  }
+}
+
+.jobs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 228px;
+  line-height: 25px;
+  padding-left: 70px;
+  text-align: left;
+  background: rgba(34, 34, 34, .49);
+  border: 1px solid #444445;
+  border-radius: 8px;
+  transition: all .25s .2s linear;
+
+  &:hover {
+    background: rgba(34, 34, 34, 1);
+    box-shadow: 1px 2px 15px rgba(255, 255, 255, .2);
+    border-color: @background-primary;
+  }
+
+  &-item {
+    color: @text;
+    position: relative;
+    cursor: pointer;
+    transition: all .25s linear;
+
+    &:before {
+      content: ' ';
+      width: 5px;
+      height: 5px;
+      background: @background-primary;
+      border-radius: 5px;
+      position: absolute;
+      left: -12px;
+      top: 10px;
+    }
+
+    &:hover {
+      color: @text-primary;
+    }
+  }
+}
+
+.page-join-ft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 78px;
+
+  h4 {
+    font-size: 23px;
+    font-weight: bolder;
+    margin-right: 18px;
+  }
+
+  .email {
+    line-height: 44px;
+    padding: 0 18px;
+    font-size: 23px;
+    font-weight: bolder;
+    color: @text-primary;
+    border: 1px solid @border-primary;
+  }
+}
+
+.job {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1050px;
+  padding: 73px 18px 73px 95px;
+  background: #161616;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -9px;
+    border-top: 1px solid @background-primary;
+  }
+
+  &-bd {
+    overflow: auto;
+    -webkit-overflow-scrolling: auto;
+    padding: 15px;
+  }
+
+  dl {
+    padding-bottom: 34px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    dt {
+      color: @text-primary;
+      font-weight: bolder;
+    }
+
+    dd {
+      position: relative;
+      line-height: 24px;
+      font-size: 13px;
+      color: #c1c1c1;
+
+      &:before {
+        content: ' ';
+        width: 4px;
+        height: 4px;
+        background: @background-primary;
+        border-radius: 4px;
+        position: absolute;
+        left: -15px;
+        top: 10px;
+      }
+    }
+  }
+}
+
+.job-title {
+  position: relative;
+  margin-bottom: 36px;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: bolder;
+  color: @text-primary;
+
+  small {
+    font-size: 18px;
+    color: #fff;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: -17px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    height: 23px;
+    background: @background-primary;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .stations {
+    flex-wrap: wrap;
+    padding: 0 24px;
+  }
+
+  .stations-item {
+    width: 50%;
+  }
+
+  .stations-item-bd {
+    margin: 24px;
+  }
+}
+
+//  ipad
+@media screen and (max-width: 768px) {
+  .slogan {
+    padding-top: 200px;
+  }
+}
+
+@media screen and (max-width: @min-display-width) {
+  .stations-item-bd {
+    padding: 0 @gap;
+  }
+
+  .stations-item {
+    width: 100%;
+  }
+
+  .jobs {
+    padding: 36px 36px;
+    height: auto;
+  }
+
+  .jobs-item {
+    line-height: 2em;
+  }
+
+  .page-join-ft {
+    flex-direction: column;
+    margin-top: 48px;
+
+    h4 {
+      font-size: 18px;
+      margin: 0 0 12px 0;
+    }
+
+    .email {
+      font-size: 14px;
+      padding: 0 26px;
+    }
+  }
+
+  .station-logo {
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .slogan  {
+    padding-top: 120px;
+
+    .title {
+      font-size: 24px;
+      margin-bottom: 18px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .job {
+    padding: 14px;
+
+    &:after {
+      bottom: -5px;
+    }
+  }
+
+  .job-bd {
+    padding-bottom: 30px;
+  }
+
+  .job-title {
+    small {
+      display: block;
+      margin-left: -10px;
+    }
+
+    &:before {
+      left: -10px;
+    }
+  }
+}

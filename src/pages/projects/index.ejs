@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>原作 - 深圳市卡扑动漫设计有限公司</title>
+    <meta name="keywords" content="深圳市卡扑动漫设计有限公司" />
+    <meta name="description" content="深圳市卡扑动漫设计有限公司" />
+</head>
+
+<body class="inner-page">
+    <div class="page-project">
+        <%= require('@/global.ejs')() %>
+
+        <div class="originals">
+            <!-- 图片集项目 如下传参， data-src-images 为 image url list, 用 ',' 分隔多张图片, js 会根据逗号解析 -->
+            <!-- e.g  data-type="image" data-src-images="http://www.hugeclaw.com/upload/202005/19/202005191812065787.jpg,http://www.hugeclaw.com/upload/202006/01/202006011818584854.png,http://www.hugeclaw.com/upload/202006/05/202006051404485592.jpg,http://www.hugeclaw.com/upload/202006/05/202006051405222781.jpg" -->
+            <div class="originals-item" data-type="image" data-src-images="http://www.hugeclaw.com/upload/202005/19/202005191812065787.jpg,http://www.hugeclaw.com/upload/202006/01/202006011818584854.png,http://www.hugeclaw.com/upload/202006/05/202006051404485592.jpg,http://www.hugeclaw.com/upload/202006/05/202006051405222781.jpg">
+                <div class="originals-thumb">
+                    <img src="http://www.hugeclaw.com/upload/202004/26/202004261121101957.jpg">
+                </div>
+                <div class="originals-intro">
+                    <div class="originals-info">
+                        <h2 class="title">《乐星大冒险》</h2>
+                        <small class="description">昔日美丽的音乐星系被噪音星人占领。四个各具本领的小朋友在一次次战斗中打败噪音星人，用音乐拯救家乡。</small>
+                    </div>
+                    <div class="originals-content">
+                        <ul>
+                            <li>
+                                作品集音乐、歌曲、冒险等元素为一体，创造了一个独具特色的“音乐世界”，在精彩的故事中对小朋友进行音乐熏陶。同时，故事中的友情、成长、励志元素，也对引导小朋友们正确世界观的形成有着积极影响。
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 视频项目如下传参 -->
+            <!-- e.g  data-type="video" data-src-video="http://player.youku.com/embed/XNDY5MTM3NjczNg?autoplay=false" -->
+            <div class="originals-item" data-type="video" data-src-video="http://player.youku.com/embed/XNDY5MTM3NjczNg?autoplay=false">
+                <div class="originals-thumb">
+                    <img src="http://www.hugeclaw.com/upload/202004/26/202004261119430107.jpg">
+                </div>
+                <div class="originals-intro">
+                    <div class="originals-info">
+                        <h2 class="title">《魔法烘焙屋》</h2>
+                        <small class="description">小狗多多和他的小伙伴们，为制作有神奇功效的魔法糕点而进行冒险的暖萌绘本故事。</small>
+                    </div>
+                    <div class="originals-content">
+                        <ul>
+                            <li>
+                                作品以制作香甜可口的“魔法糕点”为线索，多多和小伙伴展开了多次冒险之旅。作品以绘本为载体，在故事中融入几个有趣的小谜题，让小朋友们在沉浸式阅读的同时，锻炼专注力，益智又充满乐趣。
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- images modal -->
+        <div class="modal images-modal">
+            <div class="modal-mask"></div>
+            <div class="modal-bd">
+                <div class="images-viewer">
+                    <div class="modal-close"></div>
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper"></div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end images modal -->
+
+        <!-- video modal -->
+        <div class="modal video-modal">
+            <div class="modal-mask"></div>
+            <div class="modal-bd">
+                <div class="video-viewer">
+                    <div class="video-viewer-container">
+                        <div class="modal-close"></div>
+                        <div class="video-viewer-bd"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end video modal -->        
+    </div>
+</body>
+
+</html>
