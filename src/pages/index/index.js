@@ -19,7 +19,7 @@ const App = {
     let that = this;
 
     //  add modal open event for each job title
-    $(".kv-bd").on("click", function () {
+    $(".kv-bd").on("click",  '.kv-image',  function () {
       let type = $(this).attr("data-type");
       let src;
 
