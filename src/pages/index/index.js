@@ -42,7 +42,7 @@ const App = {
       effect: "fade",
 
       autoplay: {
-        delay: 400000,
+        delay: 4000,
         disableOnInteraction: false,
       },
 
