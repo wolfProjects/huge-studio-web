@@ -12,9 +12,7 @@ const App = {
 
     src.forEach((image) => {
       dom += `
-            <div class="swiper-slide">
-                <img src="${image}" alt="fuck">
-            </div>
+            <div class="swiper-slide" style="background-image: url('${image}')"></div>
       `;
     });
 
@@ -48,9 +46,25 @@ const App = {
     });
   },
   closeImagesModal() {
-    $(".images-modal").hide();
-    this.swiperInstance.destroy();
-    $(".images-modal .swiper-wrapper").empty();
+    try {
+      this.swiperInstance.destroy();
+    } catch(e) {
+      $(".images-modal").hide();
+      $(".images-modal .swiper-container").remove();
+      $(".images-viewer").append($(`
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper"></div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+      
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      `));
+    } 
+    this.swiperInstance = null;
   },
   openVideoModal(src) {
     $(".video-modal .video-viewer-bd").append(
